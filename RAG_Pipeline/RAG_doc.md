@@ -51,7 +51,7 @@ vectordb = Chroma.from_documents(documents=texts,
 ```python
 retriever = vectordb.as_retriever(search_kwargs={"k": 5})
 ```
-## IMporting Libraries and Model
+## Importing Libraries and Model
 ```python
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.prompts import PromptTemplate
