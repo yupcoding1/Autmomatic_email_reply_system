@@ -9,8 +9,8 @@ loader_csv = CSVLoader(file_path="")
 data=loader_csv.load()
 ```
 ## TEXT spliting For large Dataset
--used langchain recursive character text splitter.
--This is done for larger data set, not required for this project.
+- used langchain recursive character text splitter.
+- This is done for larger data set, not required for this project.
 ```python
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 #splitting the text into
@@ -18,8 +18,8 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 texts = text_splitter.split_documents(data)
 ```
 ## Embedding
--Used Langchain embedding to import huggingfacebgeembeddings.
--Huggingfacebgeembedding used to embed the TEXT.
+- Used Langchain embedding to import huggingfacebgeembeddings.
+- Huggingfacebgeembedding used to embed the TEXT.
 ```python
 from langchain.embeddings import HuggingFaceBgeEmbeddings
 
